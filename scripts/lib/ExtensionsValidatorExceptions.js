@@ -120,6 +120,12 @@ const extensionsAllowedProperties = {
   },
   /** @type {Record<string, ExtensionAllowedProperties>}} */
   extensionSpecificAllowance: {
+    AdvancedHTTP: {
+      gdjsAllowedProperties: ['_advancedHTTP', 'PromiseTask'],
+      gdjsEvtToolsAllowedProperties: [],
+      runtimeSceneAllowedProperties: [],
+      javaScriptObjectAllowedProperties: [],
+    },
     AdvancedJump: {
       gdjsAllowedProperties: ['PlatformerObjectRuntimeBehavior'],
       gdjsEvtToolsAllowedProperties: [],
@@ -129,6 +135,12 @@ const extensionsAllowedProperties = {
     AdvancedP2PEventHandling: {
       gdjsAllowedProperties: [],
       gdjsEvtToolsAllowedProperties: ['p2p'],
+      runtimeSceneAllowedProperties: [],
+      javaScriptObjectAllowedProperties: [],
+    },
+    AudioContext: {
+      gdjsAllowedProperties: ['__audioContextExtension'],
+      gdjsEvtToolsAllowedProperties: [],
       runtimeSceneAllowedProperties: [],
       javaScriptObjectAllowedProperties: [],
     },
@@ -287,6 +299,16 @@ const extensionsAllowedProperties = {
       ],
       javaScriptObjectAllowedProperties: [],
     },
+    ParticleEmitter3D: {
+      gdjsAllowedProperties: [
+        '__particleEmmiter3DExtension',
+        'CustomRuntimeObject',
+        'CustomRuntimeObjectInstanceContainer',
+      ],
+      gdjsEvtToolsAllowedProperties: [],
+      runtimeSceneAllowedProperties: ['__particleEmmiter3DExtension'],
+      javaScriptObjectAllowedProperties: ['getPrototypeOf'],
+    },
     PixelPerfectMovement: {
       gdjsAllowedProperties: [
         '__pixelPerfectExtension',
@@ -432,6 +454,12 @@ const extensionsAllowedProperties = {
     },
     Share: {
       gdjsAllowedProperties: ['_shareExtension'],
+      gdjsEvtToolsAllowedProperties: [],
+      runtimeSceneAllowedProperties: [],
+      javaScriptObjectAllowedProperties: [],
+    },
+    Flash: {
+      gdjsAllowedProperties: ['SpriteRuntimeObject'],
       gdjsEvtToolsAllowedProperties: [],
       runtimeSceneAllowedProperties: [],
       javaScriptObjectAllowedProperties: [],
